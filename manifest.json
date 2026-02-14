@@ -1,0 +1,43 @@
+
+{
+  "name": "ALOS Tank Inspector Pro",
+  "short_name": "TankInspector",
+  "description": "Industrial grade ISO Tank inspection and safety auditing tool for Air Liquide logistics operations.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#005596",
+  "categories": ["business", "productivity", "logistics"],
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3144/3144467.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3144/3144467.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3144/3144467.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile Inspection Form"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3144/3144467.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop Archive View"
+    }
+  ]
+}

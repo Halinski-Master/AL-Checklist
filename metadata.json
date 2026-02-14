@@ -1,0 +1,19 @@
+{
+  "name": "ALOS Tank Inspector Pro",
+  "short_name": "TankInspector",
+  "description": "Professional offline-ready ISO tank inspection tool for Air Liquide drivers.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3144/3144467.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#005596",
+  "background_color": "#ffffff",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#005596">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>ALOS Tank Inspector Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<style>
+    body { overscroll-behavior-y: contain; }
+    button, input, select { min-height: 44px; }
+    
+    @media print {
+        .no-print { display: none !important; }
+        body { background: white !important; }
+        .print-only { display: block !important; }
+        .card { border: 1px solid #ccc !important; box-shadow: none !important; margin-bottom: 20px !important; }
+    }
+    .print-only { display: none; }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans">
+    <div id="root"></div>
+    <!-- Load the Application Entry Point -->
+    <script type="module" src="index.tsx"></script>
+    
+    <script>
+      // Production Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(reg => {
+            console.log('SW registered for Air Liquide Inspector');
+          }).catch(err => {
+            console.log('SW registration failed: ', err);
+          });
+        });
+      }
+    </script>
+</body>
+</html>
